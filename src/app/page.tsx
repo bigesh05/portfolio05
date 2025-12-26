@@ -98,9 +98,21 @@ export default function HomePage() {
 
       {/* EXPERIENCE */}
       <Section title="Experience">
-        Founder of a US-registered e-commerce platform operating remotely.
-        Led engineering, finance, and product development while building scalable
-        web applications and managing cross-functional teams.
+        <div className="space-y-6">
+          <div className="bg-white/5 backdrop-blur-xl p-6 rounded-2xl border border-white/10">
+            <h3 className="font-semibold text-xl text-white">
+              ShopEmporia LLC
+            </h3>
+            <p className="text-gray-300 mt-1">
+              Founder
+            </p>
+            <p className="text-sm text-gray-400 mt-1">
+            Worked as a Founder of a US-registered e-commerce platform for more than 2 years operating remotely.
+            Led engineering, finance, and product development while building scalable
+            web applications and managing cross-functional teams.
+            </p>
+          </div>
+        </div>
       </Section>
 
       {/* PROJECTS */}
