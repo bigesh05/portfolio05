@@ -35,7 +35,7 @@ function BackgroundNetwork() {
       vx: (Math.random() - 0.5) * 0.7,
       vy: (Math.random() - 0.5) * 0.7,
       radius: 2 + Math.random() * 3,
-      color: `hsl(${Math.random() * 360}, 100%, 65%)`, // neon gradient effect
+      color: `hsl(${Math.random() * 360}, 100%, 65%)`,
     }));
 
     const draw = () => {
@@ -114,7 +114,7 @@ const projects = [
 /* ---------- HOME PAGE ---------- */
 export default function HomePage() {
   return (
-    <main className="relative min-h-screen overflow-x-hidden bg-gradient-to-b from-black via-gray-700 to-black text-white">
+    <main id="top" className="relative min-h-screen overflow-x-hidden bg-gradient-to-b from-black via-gray-700 to-black text-white">
       {/* BACKGROUND */}
       <BackgroundNetwork />
 
@@ -138,7 +138,7 @@ export default function HomePage() {
       </section>
 
       {/* SECTIONS */}
-      <Section title="Vision & Philosophy">
+      <Section id="about" title="Vision & Philosophy">
         "I am a visionary technologist passionate about turning ambitious ideas into reality. Driven by the belief that innovation and collaboration can overcome any challenge, I leverage AI, Quant, FinTech, and blockchain to build intelligent, scalable systems that deliver measurable impact - empowering businesses, investors, and communities worldwide."
       </Section>
 
@@ -163,7 +163,7 @@ export default function HomePage() {
         />
       </Section>
 
-      <Section title="Projects">
+      <Section id="projects" title="Projects">
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((p) => (
             <motion.div key={p.title} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} transition={{ duration: 0.5 }} className="p-8 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 hover:border-white/30 transition">
@@ -199,9 +199,9 @@ export default function HomePage() {
 }
 
 /* ---------- REUSABLE COMPONENTS ---------- */
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
+function Section({ id, title, children }: { id?: string; title: string; children: React.ReactNode }) {
   return (
-    <section className="relative z-10 pt-12 pb-16 px-8 max-w-4xl mx-auto">
+    <section id={id} className="relative z-10 pt-12 pb-16 px-8 max-w-4xl mx-auto">
       <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="text-4xl font-bold mb-6 text-white">
         {title}
       </motion.h2>

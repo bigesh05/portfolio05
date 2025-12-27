@@ -27,10 +27,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}
       >
+        {/* Navbar will appear on all pages */}
         <Navbar />
-        {children}
+
+        {/* Page content */}
+        <main>{children}</main>
       </body>
     </html>
   );

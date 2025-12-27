@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const navItems = [
-  { label: "Home", href: "/" },
+  { label: "Home", href: "#top" },
   { label: "Projects", href: "#projects" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
@@ -27,13 +27,13 @@ export default function Navbar() {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="
         fixed top-6 left-1/2 -translate-x-1/2 z-50
-        backdrop-blur-xl bg-white/10
-        border border-white/20
+        backdrop-blur-xl bg-black/30
+        border border-black/40
         rounded-2xl px-6 py-3
         shadow-lg shadow-black/30
       "
     >
-      <ul className="flex items-center gap-6 text-sm md:text-base text-gray-200">
+      <ul className="flex items-center gap-6 text-sm md:text-base text-gray-300">
         {navItems.map((item) => (
           <li key={item.href}>
             <Link
