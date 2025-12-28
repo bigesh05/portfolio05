@@ -4,6 +4,9 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 
+const isMobile =
+  typeof window !== "undefined" && window.innerWidth < 768;
+
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0 },
@@ -115,8 +118,10 @@ const projects = [
 export default function HomePage() {
   return (
     <main id="top" className="relative min-h-screen overflow-x-hidden bg-gradient-to-b from-black via-gray-700 to-black text-white">
-      {/* BACKGROUND */}
-      <BackgroundNetwork />
+      {/* BACKGROUND (desktop only for performance) */}
+      <div className="hidden md:block">
+        <BackgroundNetwork />
+      </div>
 
       {/* HERO */}
       <section className="relative z-10 min-h-screen flex flex-col md:flex-row items-center justify-center gap-16 px-8">
