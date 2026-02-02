@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Bigesh Poudel | AI Engineer & FinTech Systems",
   description:
-    "AI Engineer building FinTech systems, trading engines, and real-world asset tokenization platforms.",
+    "AI Engineer building FinTech systems, trading engines, and real world asset tokenization platforms.",
 };
 
 export default function RootLayout({
