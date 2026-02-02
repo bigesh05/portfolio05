@@ -124,7 +124,7 @@ export default function HomePage() {
           <h1 className="text-5xl md:text-6xl font-bold text-white">Bigesh Poudel</h1>
           <p className="text-xl text-gray-300">AI Engineer | FinTech & Blockchain Enthusiast</p>
           <p className="text-gray-400 leading-relaxed">
-            Building AI-driven financial systems, trading engines, and real-world asset tokenization platforms — merging deep research with real-world execution.
+            Building AI driven financial systems, trading engines, and real world asset tokenization platforms, merging deep research with real-world execution.
           </p>
           <div className="flex gap-4 pt-4">
             <a href="#projects" className="px-6 py-3 rounded-xl bg-white text-black font-semibold">View Projects</a>
