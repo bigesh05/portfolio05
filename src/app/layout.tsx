@@ -33,7 +33,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
 
-        <footer className="mt-20 py-6 text-center text-sm text-gray-400 border-t border-gray-800">
+        <footer className="mt-20 py-6 text-center text-sm text-gray-500">
           Thanks for visiting! You made it to the end 👀
         </footer>
 
