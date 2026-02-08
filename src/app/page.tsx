@@ -192,6 +192,9 @@ export default function HomePage() {
           <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} type="submit" className="mt-2 px-6 py-3 rounded-2xl bg-gradient-to-r from-purple-400 to-pink-500 text-white font-semibold shadow-lg shadow-pink-500/40">
             Send Message
           </motion.button>
+          <div className="mt-4 text-center text-xs text-gray-400">
+            Thanks for visiting! You made it to the end 👀
+          </div>
         </motion.form>
       </section>
     </main>
