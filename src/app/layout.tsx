@@ -33,9 +33,9 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
 
-        <footer className="mt-20 py-6 text-center text-sm text-gray-400">
+        <div className="mt-8 text-center text-xs text-gray-400">
           Thanks for visiting! You made it to the end 👀
-        </footer>
+        </div>
 
         {/* Vercel Analytics */}
         <Analytics />
