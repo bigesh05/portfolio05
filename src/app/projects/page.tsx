@@ -1,6 +1,5 @@
 "use client";
 
-export const dynamic = "force-dynamic";
 
 import { projects } from "@/lib/projects";
 import ProjectCard from "@/components/ProjectCard";

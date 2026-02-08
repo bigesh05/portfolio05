@@ -26,11 +26,9 @@ export default function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="
-        fixed top-4 left-1/2 -translate-x-1/2 z-50
-        bg-black/80
-        md:bg-white/10
-        md:backdrop-blur-xl
-        border border-white/10
+        fixed top-6 left-1/2 -translate-x-1/2 z-50
+        backdrop-blur-xl bg-black/30
+        border border-black/40
         rounded-2xl px-6 py-3
         shadow-lg shadow-black/30
       "
