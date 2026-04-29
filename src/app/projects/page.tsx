@@ -9,7 +9,7 @@ export default function ProjectsPage() {
     <main className="min-h-screen px-10 py-20">
       <h2 className="text-4xl font-bold mb-10 text-white">Projects</h2>
 
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="flex flex-col gap-6">
         {projects.map((p) => (
           <ProjectCard key={p.title} project={p} />
         ))}
