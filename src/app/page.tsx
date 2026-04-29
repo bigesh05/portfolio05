@@ -260,6 +260,9 @@ export default function HomePage() {
             </motion.button>
           </motion.form>
         </div>
+        <div className="mt-6 text-center text-xs text-gray-400">
+          Thanks for visiting! You made it to the end 👀
+        </div>
       </section>
     </main>
   );
