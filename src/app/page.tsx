@@ -190,6 +190,7 @@ export default function HomePage() {
         <ExpCard
           title="ShopEmporia LLC"
           role="Founder"
+          duration="2+ years"
           desc="Founded and developed a US-registered fashion e-commerce platform, managing operations remotely while working with US vendors and China-based manufacturers to source, import, and sell products through the website and online marketplaces. Led business operations, digital marketing, team development, strategic decisions, financial planning, and performance tracking to support sustainable growth in a competitive market."
         />
       </Section>
@@ -292,10 +293,17 @@ function EduCard({ degree, subjects, details }: { degree: string; subjects: stri
   );
 }
 
-function ExpCard({ title, role, desc }: { title: string; role: string; desc: string }) {
+function ExpCard({ title, role, duration, desc }: { title: string; role: string; duration?: string; desc: string }) {
   return (
     <div className="bg-white/5 backdrop-blur-xl p-6 rounded-2xl border border-white/10">
-      <h3 className="font-semibold text-xl text-white">{title}</h3>
+      <div className="flex flex-wrap items-center gap-2">
+        <h3 className="font-semibold text-xl text-white">{title}</h3>
+        {duration && (
+          <span className="text-xs px-3 py-1 rounded-full bg-white/10 border border-white/10 text-gray-300">
+            {duration}
+          </span>
+        )}
+      </div>
       <p className="text-gray-300 mt-1">{role}</p>
       <p className="text-sm text-gray-400 mt-1">{desc}</p>
     </div>
